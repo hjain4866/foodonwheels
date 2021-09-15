@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+#navigationbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+   /* height: 60px; */
+    /* background-color: aqua; */
+    
+}
+#navigationbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 93%;
+    width: 100%;
+   z-index: -1;
+   opacity: .5;
+}
+#logoimg{
+   width: 116px;
+   height: 55px;
+   border-radius: 50%;
+
+}
+ #navigationbar ul {
+   display: flex;
+   padding: 4px;
+   width: 100%;
+   list-style: none;
+   justify-content: center;
+   align-items: center;
+   
+  
+  
+    
+}
+ #navigationbar ul li{
+    margin: 18px;
+    
+}
+#navigationbar ul li a{
+   padding: 3px 10px;
+   color: white;
+   cursor: pointer;
+}
+#navigationbar ul li a:hover{
+    text-decoration: underline;
+   color: black;
+    border-radius: 50px;
+  
+}
+#home{
+    display: flex;
+    height: 290px;
+    flex-direction: column;
+    color: black;
+    font-weight: bolder;
+    /* position: relative; */
+    justify-content: center;
+    align-items: center;
+   
+}
+#home::before{
+    content: "";
+    background:url('/Img/bgSection.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 445px;
+    width: 100%;
+   z-index: -2;
+   /* opacity: 0.7; */
+}
+#orderbutton{
+    width: 12em;
+    background: none;
+    border: 2px solid black;
+    margin: 12px 0px;
+    border-radius: 5px;
+    box-shadow: 4px 4px brown;
+    font-size: large;
+    font-weight: bolder;
+}
+#orderbutton:hover{
+     background-color: grey;
+}
+#home p,h1{
+    margin: 26px 0px;
+}
+#ourservicessection {
+    margin-top: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#services{
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+    background-color: #fff3e4;
+    padding: 10px;
+    border-radius: 57px;
+    /* width: 500px; */
+    /* height: 240px; */
+    margin: 10px;
+}
+.box img{
+    width: 200px;
+    height: 150px;
+    /* border: 2px solid brown; */
+    border-radius: 99px;
+}
+.paragraph{
+    text-align: center;
+    margin-top: 15px;
+}
+#clientsection{
+    position: relative;
+}
+#clientsection::before{
+    content: "";
+    background: url('../Img/background.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+   z-index: -1;
+   opacity: .3;
+    
+}
+#clientsection h1{
+    text-align: center;
+    font-weight: bolder;
+}
+.client-items img{
+    margin: 0em 2em;
+    width: 150px;
+    height:100px ;
+    padding: 12px;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#formsection {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+#formsection::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../Img/pexels-alex-andrews-821754.jpg') no-repeat center center/cover;
+}
+#form{
+    
+   justify-content: center;
+}
+#form div{
+    margin :6px;
+    padding: 4px;
+    width: 500px;
+}
+#button{
+    width: 205px;
+    margin: auto;
+    display:block;
+    background: none;
+    border: 2px solid black;
+    
+    border-radius: 5px;
+    box-shadow: 4px 4px brown;
+    font-size: large;
+    font-weight: bolder;
+
+}
+#button:hover{
+    background-color: grey;
+}
+.footer div{
+    text-align: center;
+    background: black;
+    color: white;
+    padding-bottom: 12px;
+    
+}
+#form input, textarea{
+    width: 100%;
+    resize: none;
+
+}
+#form input{
+    height: 1.3rem;
+}
